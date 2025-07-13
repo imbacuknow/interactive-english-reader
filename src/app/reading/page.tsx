@@ -1,6 +1,10 @@
+import Story from "./components/Story";
+
 const Reading = () => {
   return (
-    <div>Reading</div>
-  )
-}
-export default Reading
+    <>
+      <Story />
+    </>
+  );
+};
+export default Reading;
