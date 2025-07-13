@@ -13,5 +13,5 @@ export type StoryType = {
 }
 
 export type DifficultyLevelProps = {
-    onSearch: (data: any) => void;
+    onSearch: (data: StoryListFormType) => void;
 };

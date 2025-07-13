@@ -4,11 +4,12 @@ import { storyList } from "@/mock/story.mock";
 import TeaserStoryCard from "./components/TeaserStoryCard";
 import DifficultyLevel from "./components/DifficultyLevel";
 import { useCallback, useState } from "react";
+import { StoryListFormType } from "@/lib/utils/types/mainType";
 
 const Main = () => {
   const [filteredStories, setFilteredStories] = useState(storyList);
 
-  const handleSearch = useCallback((difficultyData: any) => {
+  const handleSearch = useCallback((difficultyData: StoryListFormType) => {
     console.log("Searching with:", difficultyData);
 
     const filtered = storyList.filter((story) => {
